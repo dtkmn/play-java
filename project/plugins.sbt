@@ -16,3 +16,8 @@ addSbtPlugin("org.irundaia.sbt" % "sbt-sassify" % "1.4.6")
 // basis using disablePlugins(PlayEnhancer) in your build.sbt
 addSbtPlugin("com.typesafe.sbt" % "sbt-play-enhancer" % "1.1.0")
 
+
+
+addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.5.0")
+addSbtPlugin("com.aol.sbt" % "sbt-sonarrunner-plugin" % "1.0.4")
+addSbtPlugin("de.johoop" % "jacoco4sbt" % "2.2.0")
