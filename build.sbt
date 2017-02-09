@@ -19,4 +19,7 @@ sonarProperties ++= Map(
 //  "sonar.coverage.exclusions" -> "**/MobileAppController.java,**/SomeClass.java"
 )
 
+import com.typesafe.sbt.packager.MappingsHelper._
+mappings in Universal ++= directory(baseDirectory.value / "public")
+
 jacoco.settings
