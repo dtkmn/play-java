@@ -9,6 +9,8 @@ scalaVersion := "2.11.8"
 libraryDependencies += javaJdbc
 libraryDependencies += cache
 libraryDependencies += javaWs
+libraryDependencies += "com.couchbase.client" % "java-client" % "2.4.1"
+libraryDependencies += "commons-io" % "commons-io" % "2.5"
 
 sonarProperties ++= Map(
   "sonar.host.url" -> "http://localhost:9000",
