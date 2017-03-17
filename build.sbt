@@ -11,11 +11,14 @@ libraryDependencies += cache
 libraryDependencies += javaWs
 libraryDependencies += "com.couchbase.client" % "java-client" % "2.4.1"
 libraryDependencies += "commons-io" % "commons-io" % "2.5"
+libraryDependencies += "com.typesafe.akka" % "akka-testkit_2.11" % "2.3.8" % "test"
 
 sonarProperties ++= Map(
   "sonar.host.url" -> "http://localhost:9000",
   "sonar.jdbc.username" -> "admin",
-  "sonar.jdbc.password" -> "admin"
+  "sonar.jdbc.password" -> "admin",
+  "sonar.jacoco.reportPath" -> "target/scala-2.11/jacoco/jacoco.exec",
+  "sonar.java.binaries" -> "target/scala-2.11/classes"
 //  "sonar.coverage.exclusions" -> "**/MobileAppController.java,**/SomeClass.java"
 )
 
