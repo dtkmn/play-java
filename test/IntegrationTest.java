@@ -1,13 +1,10 @@
-import org.junit.*;
+import org.junit.Ignore;
+import org.junit.Test;
 
-import play.mvc.*;
-import play.test.*;
-
+import static org.junit.Assert.assertTrue;
 import static play.test.Helpers.*;
-import static org.junit.Assert.*;
 
-import static org.fluentlenium.core.filter.FilterConstructor.*;
-
+@Ignore
 public class IntegrationTest {
 
     /**
