@@ -15,4 +15,4 @@
 
 
 GET     /                           controllers.HomeController.index
-GET     /suspend                    controllers.ActorController.getConfig
+POST    /suspend                    controllers.ActorController.getConfig
